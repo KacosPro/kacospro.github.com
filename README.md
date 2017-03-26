@@ -1,3 +1,4 @@
 # kacospro.github.com
 GitHub Pages Test
-[link]('https://kacospro.github.com'){:target="_blank"}
+
+[Ver página](https://kacospro.github.com){:target="_blank"}
