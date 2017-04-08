@@ -1,7 +1,12 @@
-$footerHeight: 60px;
+$footerHeight: 3.5rem;
 
-html, body {
+html {
+  position: relative;
   min-height: 100%;
+}
+
+body {
+  margin-bottom: $footerHeight;
 }
 
 .navbar {
@@ -44,6 +49,7 @@ html, body {
 }
 
 .footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: $footerHeight;
