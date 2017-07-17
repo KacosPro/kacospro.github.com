@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="transparent">
+  <picture>
+    <source srcset="/assets/img/portfolio_xs.jpeg" media="(max-width: 575px)">
+    <source srcset="/assets/img/portfolio_sm.jpeg" media="(max-width: 767px)">
+    <source srcset="/assets/img/portfolio_md.jpeg" media="(max-width: 991px)">
+    <source srcset="/assets/img/portfolio_lg.jpeg" media="(max-width: 1199px)">
+    <img class="img-fluid" src="/assets/img/portfolio_xl.jpeg" alt="HTML code">
+  </picture>
+</div>
+<div class="container">
+  <div class="pt-5 pb-5">
+    {{ content }}
+  </div>
+</div>
