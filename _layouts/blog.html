@@ -2,15 +2,25 @@
 layout: default
 ---
 <div class="transparent">
-  <img class="img-fluid" src="/assets/img/blog.jpeg" alt="Laptop with glasses">
+  <picture>
+    <source srcset="/assets/img/blog_xs.jpeg" media="(max-width: 575px)">
+    <source srcset="/assets/img/blog_sm.jpeg" media="(max-width: 767px)">
+    <source srcset="/assets/img/blog_md.jpeg" media="(max-width: 991px)">
+    <source srcset="/assets/img/blog_lg.jpeg" media="(max-width: 1199px)">
+    <img class="img-fluid" src="/assets/img/blog_xl.jpeg" alt="Laptop with glasses on top">
+  </picture>
 </div>
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <h2>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </h2>
-    </li>
-  {% endfor %}
-</ul>
+<div class="container">
+  <div class="pt-5 pb-5">
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
