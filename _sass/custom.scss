@@ -5,10 +5,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: $footerHeight;
-}
-
 .navbar {
   position: absolute;
   width: 100%;
@@ -41,23 +37,36 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #000;
-  background-image: url(/assets/img/background.jpg);
-  background-size: 100% auto;
+  background-image: url('/assets/img/background_xs.jpeg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: -100;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: $footerHeight;
-  line-height: $footerHeight;
+@media (min-width: 576px) {
+  .landing {
+    background-image: url('/assets/img/background_sm.jpeg');
+  }
 }
 
-@media screen and (max-width: 1150px) {
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
   .landing {
-    background-size: auto 100%;
+    background-image: url('/assets/img/background_md.jpeg');
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .landing {
+    background-image: url('/assets/img/background_lg.jpeg');
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .landing {
+    background-image: url('/assets/img/background_xl.jpeg');
   }
 }
