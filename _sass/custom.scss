@@ -7,6 +7,7 @@ html {
 
 .navbar {
   position: absolute;
+  font-weight: 100;
   width: 100%;
   top: 0;
 }
@@ -28,9 +29,27 @@ html {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background:rgba(0,0,0,0.4);
+	background:rgba(0,0,0,0.5);
   opacity:1;
   transition: all 0.5s;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+.page-title {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  
+  h1 {
+    font-size: 5rem;
+  }
+  
 }
 
 .landing {
